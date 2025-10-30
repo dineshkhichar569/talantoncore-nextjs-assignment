@@ -1,0 +1,42 @@
+[
+  {
+    "id": "p-001",
+    "name": "Next.js T‑Shirt",
+    "slug": "nextjs-tshirt",
+    "description": "Soft cotton tee with Next.js print.",
+    "price": 799,
+    "category": "Apparel",
+    "inventory": 42,
+    "lastUpdated": "2025-10-25T10:00:00.000Z"
+  },
+  {
+    "id": "p-002",
+    "name": "TypeScript Mug",
+    "slug": "typescript-mug",
+    "description": "Ceramic mug for type‑safe mornings.",
+    "price": 499,
+    "category": "Accessories",
+    "inventory": 18,
+    "lastUpdated": "2025-10-26T10:00:00.000Z"
+  },
+  {
+    "id": "p-003",
+    "name": "MongoDB Sticker Pack",
+    "slug": "mongodb-stickers",
+    "description": "Waterproof dev sticker set.",
+    "price": 199,
+    "category": "Accessories",
+    "inventory": 120,
+    "lastUpdated": "2025-10-27T10:00:00.000Z"
+  },
+  {
+    "id": "p-004",
+    "name": "Full‑Stack Hoodie",
+    "slug": "fullstack-hoodie",
+    "description": "Premium fleece hoodie for long coding nights.",
+    "price": 2299,
+    "category": "Apparel",
+    "inventory": 7,
+    "lastUpdated": "2025-10-28T10:00:00.000Z"
+  }
+]
