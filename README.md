@@ -101,11 +101,11 @@ File: `data/products.json`
    git clone https://github.com/dineshkhichar569/talantoncore-nextjs-assignment.git
    cd talantoncore-nextjs-assignment
 
-2. **Install dependencies
+2. Install dependencies
    ```bash
    npm install
 
-3. **Start the development server 
+3. Start the development server 
     ```bash
     npm run dev
 
