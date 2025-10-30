@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ NextStore — TalantonCore Next.js Assignment
 
-## Getting Started
+### Author: **Dinesh Khichar**  
+🎓 B.Tech CSE, DIT University  
+📅 Submission Date: **31 October 2025**
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📘 Project Overview
+**NextStore** is a small e-commerce-style web application built using **Next.js (App Router + TypeScript)** as part of the **Full-Stack Development Internship Assignment** for **TalantonCore**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project demonstrates **different rendering strategies (SSG, ISR, SSR, CSR, and Server Components)** and uses **Next.js API routes** with a **mock JSON database** for full-stack functionality.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Tech Stack
+- **Frontend:** Next.js 14 (App Router), TypeScript, TailwindCSS  
+- **Backend:** Next.js API Routes  
+- **Database:** Local JSON file (`data/products.json`)  
+- **Hosting Ready:** Vercel compatible  
+- **Authentication:** Simple API key (`ADMIN_KEY`)  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧱 Folder Structure
+nextstore/
+├── app/
+│ ├── page.tsx → Home (SSG)
+│ ├── products/[slug]/page.tsx → Product Details (ISR)
+│ ├── dashboard/page.tsx → Inventory Dashboard (SSR)
+│ ├── admin/page.tsx → Admin Panel (CSR)
+│ └── recommendations/page.tsx → Recommendations (Server Components)
+│
+├── components/ → UI Components
+├── lib/ → Helpers & server logic
+├── data/products.json → Mock database
+├── pages/api/products/ → API Routes (GET, POST, PUT)
+├── .env.example → Environment variable template
+└── README.md → Rendering strategy report
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ⚙️ Rendering Strategies Demonstrated
 
-## Deploy on Vercel
+| Page | Route | Rendering Type | Description |
+|------|--------|----------------|--------------|
+| 🏠 Home | `/` | **SSG (Static Site Generation)** | Built once at deploy time with client-side search/filter |
+| 📦 Product Detail | `/products/[slug]` | **ISR (Incremental Static Regeneration)** | Revalidates every 60 seconds |
+| 📊 Inventory Dashboard | `/dashboard` | **SSR (Server-Side Rendering)** | Always fresh data from JSON |
+| 🧑‍💻 Admin Panel | `/admin` | **CSR (Client-Side Rendering)** | Client-side fetch, form submission, localStorage for key |
+| 💡 Recommendations | `/recommendations` | **Server Components + Client Interaction** | Hybrid RSC page + Wishlist button |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔗 API Endpoints
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| GET | `/api/products` | Get all products |
+| GET | `/api/products/[slug]` | Get product by slug |
+| POST | `/api/products` | Add new product *(admin key required)* |
+| PUT | `/api/products/[id]` | Update product *(admin key required)* |
+
+---
+
+## 🗄️ Mock Database
+File: `data/products.json`
+```json
+[
+  { "id": "p-001", "name": "Next.js T-Shirt", "slug": "nextjs-tshirt", "price": 799, "inventory": 42 },
+  { "id": "p-002", "name": "TypeScript Mug", "slug": "typescript-mug", "price": 499, "inventory": 18 }
+]
+
