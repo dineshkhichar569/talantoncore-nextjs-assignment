@@ -1,35 +1,45 @@
 # 🛍️ NextStore — TalantonCore Next.js Assignment
 
-### Author: **Dinesh Khichar**  
-🎓 B.Tech CSE, DIT University  
-📅 Submission Date: **31 October 2025**
+### 👨‍💻 Author: **Dinesh Khichar**  
+🎓 B.Tech CSE | DIT University  
+📍 Sikar, Rajasthan, India  
+📅 Submission Date: **31 October 2025**  
+📧 [dinesh.khichar.work@gmail.com](mailto:dinesh.khichar.work@gmail.com)  
+🌐 [dineshportfolios.site](https://dineshportfolios.site) • 💻 [GitHub](https://github.com/dineshkhichar569)
 
 ---
 
-## 📘 Project Overview
-**NextStore** is a small e-commerce-style web application built using **Next.js (App Router + TypeScript)** as part of the **Full-Stack Development Internship Assignment** for **TalantonCore**.
+## 🚀 Project Overview
 
-The project demonstrates **different rendering strategies (SSG, ISR, SSR, CSR, and Server Components)** and uses **Next.js API routes** with a **mock JSON database** for full-stack functionality.
+**NextStore** is a feature-rich, full-stack e-commerce web application built using **Next.js (App Router + TypeScript)**.  
+It was developed as part of the **Full-Stack Development Internship Assignment** for **TalantonCore** to demonstrate mastery over modern rendering patterns, full-stack integration, and scalable app architecture.
+
+The project implements **five rendering strategies** — **SSG, ISR, SSR, CSR, and Server Components** — along with a working **mock backend API** and **admin functionality**.
 
 ---
 
-## 🚀 Tech Stack
-- **Frontend:** Next.js 14 (App Router), TypeScript, TailwindCSS  
-- **Backend:** Next.js API Routes  
-- **Database:** Local JSON file (`data/products.json`)  
-- **Hosting Ready:** Vercel compatible  
-- **Authentication:** Simple API key (`ADMIN_KEY`)  
+## ⚙️ Tech Stack
+
+| Category | Technologies |
+|-----------|--------------|
+| **Frontend** | Next.js 14 (App Router), React, TypeScript, TailwindCSS |
+| **Backend** | Next.js API Routes |
+| **Database** | Local JSON file (`data/products.json`) |
+| **Authentication** | API Key (`ADMIN_KEY`) for protected routes |
+| **Hosting Ready** | Vercel (Optimized for deployment) |
 
 ---
 
 ## 🧱 Folder Structure
+
+```bash
 nextstore/
 ├── app/
-│ ├── page.tsx → Home (SSG)
-│ ├── products/[slug]/page.tsx → Product Details (ISR)
-│ ├── dashboard/page.tsx → Inventory Dashboard (SSR)
-│ ├── admin/page.tsx → Admin Panel (CSR)
-│ └── recommendations/page.tsx → Recommendations (Server Components)
+│   ├── page.tsx → Home (SSG)
+│   ├── products/[slug]/page.tsx → Product Details (ISR)
+│   ├── dashboard/page.tsx → Inventory Dashboard (SSR)
+│   ├── admin/page.tsx → Admin Panel (CSR)
+│   └── recommendations/page.tsx → Recommendations (Server Components)
 │
 ├── components/ → UI Components
 ├── lib/ → Helpers & server logic
@@ -70,3 +80,34 @@ File: `data/products.json`
   { "id": "p-002", "name": "TypeScript Mug", "slug": "typescript-mug", "price": 499, "inventory": 18 }
 ]
 
+---
+
+## ✨ Key Features
+
+- 🧩 **Dynamic Product Catalog** — Browse, search, and filter products (SSG + Client Search)
+- ⚙️ **Product Details Page** — Auto-refreshing ISR pages every 60 seconds
+- 📊 **Live Dashboard** — Real-time inventory stats (SSR)
+- 🧑‍💻 **Admin Panel** — Create & update products (CSR + API key auth)
+- 💡 **Recommendations Page** — Server Components + interactive Wishlist button
+- 📁 **Mock Database** — JSON-based backend with Next.js API routes
+- 🚀 **Fully typed** with TypeScript and TailwindCSS styling
+---
+
+---
+## 🧩 How to Run Locally
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/dineshkhichar569/talantoncore-nextjs-assignment.git
+   cd talantoncore-nextjs-assignment
+
+2. **Install dependencies
+   ```bash
+   npm install
+
+3. **Start the development server 
+    ```bash
+    npm run dev
+
+
+---
