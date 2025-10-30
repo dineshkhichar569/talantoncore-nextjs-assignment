@@ -48,7 +48,7 @@ nextstore/
 ├── .env.example → Environment variable template
 └── README.md → Rendering strategy report
 
----
+```
 
 ## ⚙️ Rendering Strategies Demonstrated
 
@@ -80,7 +80,7 @@ File: `data/products.json`
   { "id": "p-002", "name": "TypeScript Mug", "slug": "typescript-mug", "price": 499, "inventory": 18 }
 ]
 
----
+```
 
 ## ✨ Key Features
 
